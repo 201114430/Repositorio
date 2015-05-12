@@ -1,0 +1,78 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<XMI xmi.version = "1.1" xmlns:UML="href://org.omg/UML/1.3" timestamp = "Sun Mar 22 11:54:53 2015">
+<XMI.header>
+  <XMI.documentation>
+    <XMI.owner></XMI.owner>
+    <XMI.contact></XMI.contact>
+    <XMI.exporter>StarUML.XMI-Addin</XMI.exporter>
+    <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    <XMI.notice></XMI.notice>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name = "UML" xmi.version = "1.3"/>
+ </XMI.header>
+<XMI.content>
+<UML:Model xmi.id="UMLProject.1">
+  <UML:Namespace.ownedElement>
+    <UML:Model xmi.id="UMLModel.2" name="Use Case Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.30" name="useCaseModel" extendedElement="UMLModel.2"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.3" name="Analysis Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.31" name="analysisModel" extendedElement="UMLModel.3"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.4" name="Design Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="UMLClass.5" name="numero aleatorio" visibility="public" isSpecification="false" namespace="UMLModel.4" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:Namespace.ownedElement>
+            <UML:ActivityGraph xmi.id="UMLActivityGraph.6" name="ActivityGraph1" visibility="public" isSpecification="false" context="UMLClass.5">
+              <UML:StateMachine.top>
+                <UML:CompositeState xmi.id="UMLCompositeState.7" name="TOP" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" isConcurrent="false">
+                  <UML:CompositeState.subvertex>
+                    <UML:Pseudostate xmi.id="UMLPseudostate.8" name="Initial1" visibility="public" isSpecification="false" container="UMLCompositeState.7" outgoing="UMLTransition.19" kind="initial"/>
+                    <UML:ActionState xmi.id="UMLActionState.9" name="inicializar num1,mun2" visibility="public" isSpecification="false" container="UMLCompositeState.7" outgoing="UMLTransition.18 UMLTransition.20" incoming="UMLTransition.19" isDynamic="false"/>
+                    <UML:SubactivityState xmi.id="UMLSubactivityState.10" name="SubactivityState1" visibility="public" isSpecification="false" container="UMLCompositeState.7" incoming="UMLTransition.18" isDynamic="false"/>
+                    <UML:ActionState xmi.id="UMLActionState.11" name="pedir num1,num2" visibility="public" isSpecification="false" container="UMLCompositeState.7" outgoing="UMLTransition.21" incoming="UMLTransition.20" isDynamic="false"/>
+                    <UML:Pseudostate xmi.id="UMLPseudostate.12" name="Decision1" visibility="public" isSpecification="false" container="UMLCompositeState.7" outgoing="UMLTransition.22 UMLTransition.23" incoming="UMLTransition.21" kind="branch"/>
+                    <UML:ActionState xmi.id="UMLActionState.13" name="mostrar &quot;Revise los limites&quot;" visibility="public" isSpecification="false" container="UMLCompositeState.7" outgoing="UMLTransition.27" incoming="UMLTransition.22" isDynamic="false"/>
+                    <UML:ActionState xmi.id="UMLActionState.14" name="num = numero aleatorio" visibility="public" isSpecification="false" container="UMLCompositeState.7" outgoing="UMLTransition.25" incoming="UMLTransition.24" isDynamic="false"/>
+                    <UML:ActionState xmi.id="UMLActionState.15" name="inicializar num" visibility="public" isSpecification="false" container="UMLCompositeState.7" outgoing="UMLTransition.24" incoming="UMLTransition.23" isDynamic="false"/>
+                    <UML:ActionState xmi.id="UMLActionState.16" name="mostrar num en letras" visibility="public" isSpecification="false" container="UMLCompositeState.7" outgoing="UMLTransition.26" incoming="UMLTransition.25" isDynamic="false"/>
+                    <UML:FinalState xmi.id="UMLFinalState.17" name="FinalState1" visibility="public" isSpecification="false" container="UMLCompositeState.7" incoming="UMLTransition.26 UMLTransition.27"/>
+                  </UML:CompositeState.subvertex>
+                </UML:CompositeState>
+              </UML:StateMachine.top>
+              <UML:StateMachine.transitions>
+                <UML:Transition xmi.id="UMLTransition.18" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLActionState.9" target="UMLSubactivityState.10"/>
+                <UML:Transition xmi.id="UMLTransition.19" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLPseudostate.8" target="UMLActionState.9"/>
+                <UML:Transition xmi.id="UMLTransition.20" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLActionState.9" target="UMLActionState.11"/>
+                <UML:Transition xmi.id="UMLTransition.21" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLActionState.11" target="UMLPseudostate.12"/>
+                <UML:Transition xmi.id="UMLTransition.22" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLPseudostate.12" target="UMLActionState.13"/>
+                <UML:Transition xmi.id="UMLTransition.23" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLPseudostate.12" target="UMLActionState.15"/>
+                <UML:Transition xmi.id="UMLTransition.24" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLActionState.15" target="UMLActionState.14"/>
+                <UML:Transition xmi.id="UMLTransition.25" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLActionState.14" target="UMLActionState.16"/>
+                <UML:Transition xmi.id="UMLTransition.26" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLActionState.16" target="UMLFinalState.17"/>
+                <UML:Transition xmi.id="UMLTransition.27" name="" visibility="public" isSpecification="false" stateMachine="UMLActivityGraph.6" source="UMLActionState.13" target="UMLFinalState.17"/>
+              </UML:StateMachine.transitions>
+            </UML:ActivityGraph>
+          </UML:Namespace.ownedElement>
+        </UML:Class>
+        <UML:Stereotype xmi.id="X.32" name="designModel" extendedElement="UMLModel.4"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.28" name="Implementation Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.33" name="implementationModel" extendedElement="UMLModel.28"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.29" name="Deployment Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.34" name="deploymentModel" extendedElement="UMLModel.29"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </UML:Namespace.ownedElement>
+</UML:Model>
+</XMI.content>
+</XMI>
